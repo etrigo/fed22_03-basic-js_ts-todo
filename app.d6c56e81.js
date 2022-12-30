@@ -9,4 +9,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./util":"Hq4s","./listeners":"hc4r"}],"haqf":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("./initialize");(0,e.initialize)();
 },{"./initialize":"VtfL"}]},{},["haqf"], null)
-//# sourceMappingURL=dist/app.d6c56e81.js.map
+//# sourceMappingURL=app.d6c56e81.js.map
