@@ -4,6 +4,7 @@ The app initializes with a few dummy todos. From that the user can check todos b
 * Finnished todos can be unchecked and are then moved back to the active todos list.
 * User can sort the the todo list alphabetically from A-Z or from Z-A by clicking the sort button.
 * User can add new todo by filling in the input field and clicking the "Add to list" button
+
 The next feature for the att would be a function to remove a todo completly. But this project was mainly to disply an basic understanding of TypeScript which current functionality does.
 As an extra feature the app uses local storage to store todos and current sort state.
 ### Tech
