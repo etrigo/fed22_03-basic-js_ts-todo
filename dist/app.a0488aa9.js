@@ -120,6 +120,12 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"ts/handlers.ts":[function(require,module,exports) {
 "use strict";
 
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -151,9 +157,9 @@ var handleForm = function handleForm(event) {
   if (new_todo == "") {
     alert("A todo must be filled in");
   } else {
-    var new_id = Math.max.apply(Math, util_2.todos.map(function (todo) {
+    var new_id = Math.max.apply(Math, _toConsumableArray(util_2.todos.map(function (todo) {
       return todo.id;
-    })) + 1;
+    }))) + 1;
     util_2.todos.push({
       id: new_id,
       todo: new_todo,
@@ -383,7 +389,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55382" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57774" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
