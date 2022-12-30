@@ -8,7 +8,7 @@ The next feature for the att would be a function to remove a todo completly. But
 As an extra feature the app uses local storage to store todos and current sort state.
 ### Tech
 To setup the environment Parcel.js was used as adviced. To style the app at least one style framework was supposed to be used so Flexbox was selected. The styling was written in SASS and ofcourse the scripting was done with TypeScript.
-=======
+
 # fed22_basic_js
 Work done in the basic js course
 
