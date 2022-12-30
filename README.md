@@ -7,10 +7,9 @@ The app initializes with a few dummy todos. From that the user can check todos b
 
 *The next feature for the app would be a function to remove a todo completly. But this project was mainly to disply basic understanding of TypeScript which current functionality does.*
 
-* As an extra feature the app uses local storage to store todos and current sort state.
 
 ### Tech
-To setup the environment Parcel.js was used as adviced. To style the app at least one style framework was supposed to be used so Flexbox was selected. The styling was written in SASS and ofcourse the scripting was done with TypeScript.
+To setup the environment Parcel.js was used as adviced. To style the app at least one style framework was supposed to be used so Flexbox was selected. The styling was written in SASS and ofcourse the scripting was done with TypeScript. As an extra feature the app uses local storage to store todos and current sort state.
 ### fed22_basic_js
 Work done in the basic js course
 
