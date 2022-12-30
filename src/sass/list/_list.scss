@@ -1,0 +1,98 @@
+#todos-section {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.list-container {
+    background-color: var(--ul-background-color);
+    border-radius: 4px;
+    width: 100%;
+    margin: 20px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    h1, h3 {
+        margin: 15px 0 15px 15px;
+    }
+
+    button {
+        margin: 0 15px;
+        height: 35px;
+        background-color: var(--btn-background-color);
+        color: var(--text-color);
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+    }
+
+    ul li {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 5px 0 5px 0;
+        font-size: 14px;
+        text-transform: capitalize;
+        
+        input {
+            margin: 5px 10px 5px 15px;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+        }
+
+        input:checked {
+            accent-color: var(--color-checked);
+        }
+        
+        p {
+            width: calc(100% - 65px);
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .checked {
+        text-decoration: line-through;
+        color: var(--color-checked);
+    }
+    
+
+    ul li:hover {
+        background-color: var(--ul-hover-background-color);
+    }
+
+    form {
+        margin: 0 15px 15px 15px;
+        display: flex;
+        flex-direction: column;
+
+        input[type=text] {
+            height: 40px;
+            margin-bottom: 15px;
+            padding-left: 15px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input[type=submit] {
+            height: 35px;
+            background-color: var(--btn-background-color);
+            color: var(--text-color);
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+
+    }
+}
